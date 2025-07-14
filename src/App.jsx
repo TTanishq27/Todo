@@ -3,7 +3,6 @@ import Row from './Row';
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
-  const [count, setCount] = useState(0);
   const [inputValue, setInputValue] = useState('');
 
   const addTask = () => {
