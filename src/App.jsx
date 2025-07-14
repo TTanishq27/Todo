@@ -19,7 +19,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>ToDo List</h1>
+      <h1>ToDo List ({tasks.length})</h1>
       <div className="input-container">
         <input
           type="text"
@@ -29,10 +29,6 @@ const App = () => {
           onKeyDown={handleKeyDown}
         />
         <button onClick={addTask}>Add</button>
-      </div>
-
-      <div className="task-count">
-        <p>Total Tasks: {tasks.length}</p>
       </div>
 
       <ol className="task-list">
